@@ -47,11 +47,12 @@ function game() {
   var rounds_computer_won = 0;
   // play consecutive rounds until 5 rounds have been played
   while (!game_completed) {
-    // check if 5 rounds have been played; if so end the game
+    // check if 5 rounds have been played; if so end the game. increment round count
+    round_number++;
     if (round_number >= 5) {
       game_completed = true;
     }
-    round_number++;
+
     // ask the user for a choice
     player_choice_round = prompt(
       "Please input your choice: Rock, Paper or scissor?",
