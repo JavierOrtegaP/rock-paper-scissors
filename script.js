@@ -55,7 +55,7 @@ function game() {
 
     // ask the user for a choice
     player_choice_round = prompt(
-      "Please input your choice: Rock, Paper or scissor?",
+      "Please input your choice: Rock, Paper or Scissors?",
     );
     // get the choice of the computer
     computer_choice_round = getComputerChoice();
